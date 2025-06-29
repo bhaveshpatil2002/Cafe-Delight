@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Delight</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #fff8f0;
+      color: #333;
+    }
+    header {
+      background: url('images/cafe-bg.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .menu-btn {
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border: none;
+      background-color: #ff6f61;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .menu-btn:hover {
+      background-color: #e65c50;
+    }
+    nav {
+      background-color: #fff;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff6f61;
+    }
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+    .menu-item {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .menu-item h3 {
+      margin-bottom: 0.5rem;
+    }
+    .menu-item p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .menu-item span {
+      font-weight: bold;
+      color: #ff6f61;
+    }
+ .color{
+      color:#ffdf91;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="color">Welcome to Café Delight</h1>
+    <p class="color">Explore our delicious offerings</p>
+    <a href="#menu"><button class="menu-btn">View Menu</button></a>
+  </header>
+
+  <nav id="menu">
+    <a href="#snacks">Snacks</a>
+    <a href="#beverages">Beverages</a>
+    <a href="#desserts">Desserts</a>
+  </nav>
+
+  <section class="section" id="snacks">
+    <h2>Snacks</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><h3>French Fries</h3><p>Crispy golden fries with seasoning</p><span>₹99</span></div>
+      <div class="menu-item"><h3>Veg Sandwich</h3><p>Grilled sandwich with fresh veggies</p><span>₹89</span></div>
+      <div class="menu-item"><h3>Cheese Balls</h3><p>Deep-fried cheese-filled snacks</p><span>₹110</span></div>
+      <div class="menu-item"><h3>Spring Rolls</h3><p>Vegetable-filled crispy rolls</p><span>₹120</span></div>
+      <div class="menu-item"><h3>Paneer Tikka</h3><p>Grilled paneer with spices</p><span>₹150</span></div>
+      <div class="menu-item"><h3>Masala Nachos</h3><p>Nachos topped with Indian masala and cheese</p><span>₹130</span></div>
+      <div class="menu-item"><h3>Garlic Bread</h3><p>Toasted bread with garlic and cheese</p><span>₹90</span></div>
+      <div class="menu-item"><h3>Samosa</h3><p>Traditional potato-filled crispy snack</p><span>₹40</span></div>
+      <div class="menu-item"><h3>Mini Burgers</h3><p>Small-sized burgers perfect for snacking</p><span>₹100</span></div>
+      <div class="menu-item"><h3>Chilli Potato</h3><p>Fried potatoes tossed in spicy sauce</p><span>₹110</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="beverages">
+    <h2>Beverages</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><h3>Cappuccino</h3><p>Freshly brewed espresso with milk foam</p><span>₹120</span></div>
+      <div class="menu-item"><h3>Lemon Iced Tea</h3><p>Refreshing chilled lemon tea</p><span>₹70</span></div>
+      <div class="menu-item"><h3>Mango Smoothie</h3><p>Thick mango shake with ice cream</p><span>₹130</span></div>
+      <div class="menu-item"><h3>Cold Coffee</h3><p>Blended coffee with ice cream</p><span>₹100</span></div>
+      <div class="menu-item"><h3>Hot Chocolate</h3><p>Rich and creamy chocolate drink</p><span>₹140</span></div>
+      <div class="menu-item"><h3>Green Tea</h3><p>Healthy and refreshing green tea</p><span>₹60</span></div>
+      <div class="menu-item"><h3>Strawberry Shake</h3><p>Fresh strawberries blended with milk</p><span>₹110</span></div>
+      <div class="menu-item"><h3>Orange Juice</h3><p>Freshly squeezed orange juice</p><span>₹80</span></div>
+      <div class="menu-item"><h3>Black Coffee</h3><p>Strong black coffee shot</p><span>₹90</span></div>
+      <div class="menu-item"><h3>Masala Chai</h3><p>Traditional Indian spiced tea</p><span>₹50</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="desserts">
+    <h2>Desserts</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><h3>Chocolate Brownie</h3><p>Rich chocolate brownie with nuts</p><span>₹80</span></div>
+      <div class="menu-item"><h3>Ice Cream Sundae</h3><p>Vanilla scoop with chocolate syrup</p><span>₹95</span></div>
+      <div class="menu-item"><h3>Gulab Jamun</h3><p>Traditional sweet with sugar syrup</p><span>₹60</span></div>
+      <div class="menu-item"><h3>Cheesecake</h3><p>Creamy baked cheesecake slice</p><span>₹150</span></div>
+      <div class="menu-item"><h3>Fruit Salad</h3><p>Mixed seasonal fruits with honey</p><span>₹70</span></div>
+      <div class="menu-item"><h3>Chocolate Mousse</h3><p>Light and airy chocolate dessert</p><span>₹100</span></div>
+      <div class="menu-item"><h3>Red Velvet Cake</h3><p>Moist red velvet cake slice</p><span>₹130</span></div>
+      <div class="menu-item"><h3>Waffles</h3><p>Golden crispy waffles with syrup</p><span>₹120</span></div>
+      <div class="menu-item"><h3>Apple Pie</h3><p>Warm apple pie with cinnamon</p><span>₹110</span></div>
+      <div class="menu-item"><h3>Milkshake</h3><p>Thick and creamy sweet shake</p><span>₹90</span></div>
+    </div>
+  </section>
+</body>
+</html>
